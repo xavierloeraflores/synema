@@ -17,6 +17,9 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    domains: ["www.themoviedb.org"],
+  },
 };
 
 export default config;
