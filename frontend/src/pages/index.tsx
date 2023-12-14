@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Sandbox from "~/components/sandbox";
 
 export default function Home() {
   return (
@@ -9,7 +10,10 @@ export default function Home() {
         <meta name="description" content="Discover More." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="">Index Page</main>
+      <main className="">
+        Index Page
+        <Sandbox />
+      </main>
     </>
   );
 }
