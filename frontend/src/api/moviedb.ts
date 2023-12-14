@@ -10,4 +10,10 @@ export class MovieDBAPI {
     );
     return response.json();
   };
+  static search = async (query: string) => {
+    const response = await fetch(
+      `${MovieDBAPI.baseUrl}/search/movie?api_key=${MovieDBAPI.apiKey}&query=${query}`,
+    );
+    return response.json();
+  };
 }
